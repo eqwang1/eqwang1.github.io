@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Erqi Wang</title>
+
+    <meta name="author" content="Erqi Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: justify;">
+                  Erqi Wang
+                </p>
+                <p style="text-align: justify;">
+                  I'm a PhD student under the supervision of <a href="https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-ren-hongliang">Prof. Ren Hongliang</a>, 
+                  at the Department of Electronic Engineering, The Chinese University of Hong Kong (CUHK).
+                </p>
+
+                <p style="text-align: justify;">
+                  My current research interests focus on localization and mapping / reconstruction technologies for mobile robots, and their applications in medical imaging. 
+                  In the future, I also plan to explore integrating with embodied intelligence.
+                </p>
+
+                <p style="text-align:center">
+                  <a href="ewang@link.cuhk.edu.hk">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=qDk1ShYAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://orcid.org/0000-0002-4032-3563">ORCID</a> &nbsp;/&nbsp;
+                  <a href="https://maps.google.com/maps?ll=22.418063,114.207252&z=17&t=m&hl=zh-CN&gl=US&mapclient=apiv3&cid=17570675738837167513">📍</a> &nbsp;&nbsp;
+                </p>
+                
+              </td>
+              <td style="padding:2.5%;width:35%;max-width:37%">
+                <a href="img_mine/climb.jpg"><img style="width:85%;max-width:85%;object-fit: cover;" alt="profile photo" src="img_mine/climb.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          
+        <br>
+        <br>
+        <br>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle;display: flex;align-items: top;">
+              <h2>Projects</h2>
+              <!-- <strong style="font-size:20px;">Projects</strong> -->
+              <!-- <p> -->
+              <!-- I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>. -->
+              <!-- </p> -->
+              <img src="vid/aproj.gif" alt="Project GIF" style="width:11%;height:11%; margin-left: 10px;opacity:0.3;">
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <hr style="opacity:0.5;line-height:0px;">
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+      <tr>
+        <td style="padding:16px;width:40%;vertical-align:middle">
+          <div>
+            <video style="width:100%;margin-right:2%;" muted autoplay loop>
+              <source src="vid/demo4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+
+        <td style="padding:16px;width:60%;vertical-align:middle">
+          <h3 style="margin:0;">Localization of 2D tomograms in 3D space </h3>
+          <p style="text-align:justify; margin:10px 0;font-size:14px;line-height:1.4;">
+            Tracks the 6 degree-of-freedom handheld scanner poses in real-time via high-speed photoacoustic imaging, and constructs panoramic 3D vascular maps without field-of-view constraints, offering on-site guidance. 
+            Would help improve surgical perception.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+      <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">
+        <td style="padding:16px;width:60%;vertical-align:middle">
+          <h3 style="margin:0;">Neural implicit 3D reconstruction of tomography</h3>
+          </br>
+          <p style="text-align:justify; margin:0px;font-size:14px;line-height:1.4;">
+            After acquiring a set of 2D tomography sequence of handheld scan along arbitrary trajectory, 
+            tracking the 3D space position without sensor, 
+            and reconstruct a high-resolution 3D model via neural implicit representation.
+          </p>
+        </td>
+
+        <td style="padding:16px;width:40%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='nerf_image'>
+              <video  width=180% muted autoplay loop>
+              <source src="vid/demo3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='vid/demo3.jpg' width=180%>
+          </div>
+          <script type="text/javascript">
+            function nerf_start() {
+              document.getElementById('nerf_image').style.opacity = "1";
+            }
+  
+            function nerf_stop() {
+              document.getElementById('nerf_image').style.opacity = "0";
+            }
+            nerf_stop()
+          </script>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+      <tr onmouseout="pamtam_stop()" onmouseover="pamtam_start()">
+        <td style="padding:16px;width:40%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='pamtam_image'>
+              <video  width=180% muted autoplay loop>
+              <source src="vid/demo1p2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='vid/demo1p2.jpg' width=180%>
+          </div>
+          <script type="text/javascript">
+            function pamtam_start() {
+              document.getElementById('pamtam_image').style.opacity = "1";
+            }
+  
+            function pamtam_stop() {
+              document.getElementById('pamtam_image').style.opacity = "0";
+            }
+            pamtam_stop()
+          </script>
+        </td>
+
+        <td style="padding:16px;width:60%;vertical-align:middle">
+          <h3 style="margin:0;">Freehand 3D Panoramic Angiography SLAM</h3>
+          </br>
+          <p style="text-align:justify; margin:0px;font-size:14px;line-height:1.4;">
+            Tracks the 6 degree-of-freedom handheld scanner poses in real-time via high-speed photoacoustic imaging, 
+            and constructs panoramic 3D vascular maps without field-of-view constraints, offering on-site guidance. 
+            Would help improve surgical perception.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+      <tr>
+        <td>
+          <h2>Publications</h2>
+        </td>
+      </tr>
+
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <hr style="opacity:0.5;line-height:0px;">
+
+    <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1038/s41377-024-01450-0">
+            <span class="papertitle">Advancing insights into in vivo meningeal lymphatic vessels with stereoscopic wide-field photoacoustic microscopy</span>
+          </a>
+          <br>
+          Yang F, Wang Z, Shi W, Wang M, Ma R, Zhang W, Li X, <strong>Wang E</strong>, Xie W, Zhang Z, Shen Q.
+          <br>
+          <em>Light: Science & Applications</em> (SJR Q1, IF=20.6), 2024
+          <br>
+        </td>
+      </tr>  
+
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1016/j.media.2024.103106">
+            <span class="papertitle">DOVE: Doodled vessel enhancement for photoacoustic angiography super resolution</span>
+          </a>
+          <br>
+          Ma Y, Zhou W, Ma R, <strong>Wang E</strong>, Yang S, Tang Y, Zhang X, Guan X.
+          <br>
+          <em>Medical Image Analysis</em> (SJR Q1, IF=10.7), 2024
+          <br>
+        </td>
+      </tr>  
+
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1063/5.0142792">
+            <span class="papertitle">Miniature fiber scanning probe for flexible forward-view photoacoustic endoscopy</span>
+          </a>
+          <br>
+          Ke D, Wang L, <strong>Wang E</strong>, Xin H, Yang S, Xiong K.
+          <br>
+          <em>Applied physics letters</em> (SJR Q1, IF=3.5), 2024
+          <br>
+        </td>
+      </tr>  
+
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1016/j.pacs.2023.100458">
+            <span class="papertitle">Photoacoustic/ultrasonic dual-mode imaging for monitoring angiogenesis and synovial erosion in rheumatoid arthritis</span>
+          </a>
+          <br>
+          Wang Z, Tong Z, Chen H, Nie G, Hu J, Liu W, <strong>Wang E</strong>, Yuan B, Wang Z, Hu J.
+          <br>
+          <em>Photoacoustics</em> (SJR Q1, IF=7.1), 2023
+          <br>
+        </td>
+      </tr> 
+
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1364/PRJ.470737">
+            <span class="papertitle">High-fluence relay-based disposable photoacoustic-ultrasonic endoscopy for in vivo anatomical imaging of gastrointestinal tract.</span>
+          </a>
+          <br>
+          Wen X, Lei P, Huang S, Chen X, Yuan Y, Ke D, Liu R, Liang J, <strong>Wang E</strong>, Xiong K, Yang S.
+          <br>
+          <em>Photonics Research</em> (SJR Q1, IF=6.6), 2023
+          <br>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://doi.org/10.1063/5.0128076">
+            <span class="papertitle">Photoacoustic imaging of tumor vascular involvement and surgical margin pathology for feedback-guided intraoperative tumor resection</span>
+          </a>
+          <br>
+          Zhang Z, Mu G, <strong>Wang E</strong>, Cui D, Yang F, Wang Z, Yang S, Shi Y.
+          <br>
+          <em>Applied physics letters</em> (SJR Q1, IF=3.5), 2022
+          <br>
+        </td>
+      </tr>  
+
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+  </body>
+  
+</html>
